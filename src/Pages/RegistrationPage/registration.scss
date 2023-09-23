@@ -1,0 +1,126 @@
+:root {
+  --PrimaryColor: #e7a304;
+  --SecondaryColor: hsla(180, 6%, 85%, 0.938);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(48, 11%, 74%),
+    hsl(44, 92%, 49%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+}
+
+.regForm {
+  background: url(../../Assets/BGImage1.jpg);
+  // padding-top: 20px;
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .formCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(44, 43, 43, 0.1);
+    background-color: #fff;
+    width: 100%; /* Full width on small screens */
+    max-width: 600px; /* Limit the width on larger screens */
+    padding: 20px; /* Add spacing */
+    margin: 5.5rem 0;
+  }
+
+  .formImage img {
+    width: 100%; /* Full width for the image */
+    max-width: 550px; /* Limit the image size */
+    height: auto;
+  }
+
+  .formLogo img {
+    height: 130px;
+    width: auto;
+  }
+
+  h3 {
+    color: #4e3501;
+    text-align: center;
+  }
+
+  .form {
+    width: 100%; /* Full width on small screens */
+    max-width: 400px; /* Limit the width on larger screens */
+  }
+
+  .form-input {
+    margin: 20px;
+  }
+
+  .form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #4e3501;
+    font-size: 14px;
+    text-transform: capitalize;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .form-control::placeholder {
+    color: #666;
+  }
+
+  .form-control:focus {
+    border-bottom-color: var(--PrimaryColor);
+  }
+
+  .logoImg {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .regBtn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 3rem 0;
+  }
+
+  .btn {
+    font-size: 18px;
+    color: white;
+  }
+
+  /* Increase font size on larger screens */
+  @media screen and (min-width: 768px) {
+    .formCard {
+      width: 80%;  
+    }
+
+    .formImage img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .form {
+      max-width: 600px; 
+    }
+
+    .form-control {
+      font-size: 18px; 
+    }
+
+    .btn {
+      font-size: 18px; 
+    }
+  }
+}
